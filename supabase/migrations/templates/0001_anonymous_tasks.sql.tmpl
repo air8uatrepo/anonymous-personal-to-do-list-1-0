@@ -1,0 +1,24 @@
+create schema if not exists {{SCHEMA}};
+
+create table if not exists {{SCHEMA}}.tasks (
+  id uuid primary key default gen_random_uuid(),
+  visitor_id uuid not null,
+  title text not null check (char_length(btrim(title)) between 1 and 200),
+  completed boolean not null default false,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists tasks_visitor_created_at_idx
+  on {{SCHEMA}}.tasks (visitor_id, created_at, id);
+
+alter table {{SCHEMA}}.tasks enable row level security;
+
+grant usage on schema {{SCHEMA}} to {{APP_ROLE}};
+grant select, insert, update, delete on table {{SCHEMA}}.tasks to {{APP_ROLE}};
+
+create policy tasks_owner_access
+  on {{SCHEMA}}.tasks
+  for all
+  to {{APP_ROLE}}
+  using (visitor_id = current_setting('app.visitor_id', true)::uuid)
+  with check (visitor_id = current_setting('app.visitor_id', true)::uuid);

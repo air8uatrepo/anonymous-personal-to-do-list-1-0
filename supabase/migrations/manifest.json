@@ -1,0 +1,8 @@
+{
+  "migrations": [
+    {
+      "file": "templates/0001_anonymous_tasks.sql.tmpl",
+      "sha256": "02e5b390d2e8a1dd2824bdabd423d10f6b5fe7de2d37c3bdac00ec1a89af5a28"
+    }
+  ]
+}
