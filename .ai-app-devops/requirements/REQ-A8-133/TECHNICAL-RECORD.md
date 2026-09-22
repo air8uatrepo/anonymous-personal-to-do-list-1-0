@@ -10,3 +10,15 @@ Materialization evidence for REQ-A8-133.
 - Root guide: AGENTS.md present and workflow-managed.
 - Next role: usiness_direct_developer in the isolated worktree.
 - Deployment is not started in this checkpoint.
+
+## Developer checkpoint
+
+- Commit: 9f7c63f.
+- Fresh verification: 
+pm test -- --run, 
+pm run lint, 
+pm run build, and 
+pm run verify passed.
+- Developer evidence: 20/20 tests and local production E2E 1/1 passed.
+- Next role: usiness_direct_tester.
+

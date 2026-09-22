@@ -2,8 +2,8 @@
 workflow_type: business_direct_app_v1
 project_mode: NEW
 status: BUILDING_PREVIEW
-pending_action: DISPATCH_DEVELOPER
-execution_cursor: DISPATCH_DEVELOPER
+pending_action: DISPATCH_TESTER
+execution_cursor: TEST_BUILD_EVIDENCE
 application_id: anonymous-personal-to-do-list-1-0
 requirement_id: REQ-A8-133
 run_id: bd-a8-133-20260922-171500
@@ -11,7 +11,7 @@ branch: req/REQ-A8-133
 worktree_path: C:\aiproject\.worktrees\anonymous-personal-to-do-list-1-0\REQ-A8-133
 base_sha: d797bfc
 thread_id: null
-state_revision: 2
+state_revision: 3
 repair_count: 0
 clarification_round: 1
 local_clarification_revision: 3
@@ -41,4 +41,5 @@ The confirmed revision 3 is materialized in the dedicated public repository,
 requirement branch, isolated worktree, root AGENTS.md, and local SDD/state
 records. The next action is to dispatch the Business Direct developer in the
 isolated worktree to create the plan, tasks, implementation, and tests.
+
 
