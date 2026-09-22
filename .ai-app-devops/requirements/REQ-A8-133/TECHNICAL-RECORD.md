@@ -22,3 +22,11 @@ pm run verify passed.
 - Developer evidence: 20/20 tests and local production E2E 1/1 passed.
 - Next role: usiness_direct_tester.
 
+
+## Independent tester checkpoint
+
+- Commit: $(git -C C:\aiproject\.worktrees\anonymous-personal-to-do-list-1-0\REQ-A8-133 rev-parse --short HEAD).
+- Verdict: PASS.
+- Browser evidence: Chromium production-like server, cumulative AC-1..AC-4, isolation, reload persistence and mutation authorization passed.
+- Next role: usiness_direct_deployment for preview provisioning.
+
