@@ -2,7 +2,8 @@ import { expect, test } from "@playwright/test";
 
 test("anonymous visitor can manage an isolated task through reloads", async ({ browser, page }) => {
   test.setTimeout(30000);
-  const taskTitle = "DEMO-REQ-A8-133-E2E-001";
+  const runId = process.env.BUSINESS_DIRECT_E2E_RUN_ID ?? "DEMO-REQ-A8-133-E2E-001";
+  const taskTitle = `${runId}-retained`;
 
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "Your to-do list" })).toBeVisible();
