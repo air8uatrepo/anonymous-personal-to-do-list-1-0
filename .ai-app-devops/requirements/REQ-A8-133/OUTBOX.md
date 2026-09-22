@@ -6,3 +6,4 @@
 | A8-133 | state_mirror | Linear main issue c08785ff-0d6d-4219-b02e-97f82d8aff14 | 1 | `state-mirror:c08785ff-0d6d-4219-b02e-97f82d8aff14:BUILDING_PREVIEW:r1` | Developing read back 2026-09-22T09:16:55.884Z |
 | A8-133 | timeline_comment | Linear comment 5919ad7e-5a55-4f04-aaa0-0a913901d4f8 | 1 | `timeline:c08785ff-0d6d-4219-b02e-97f82d8aff14:BUILDING_PREVIEW:r1` | Updated and read back 2026-09-22T09:16:36.680Z |
 | A8-133 | jev_gate_summary | Local state record | 3 | `jev:human_confirmation:c08785ff-0d6d-4219-b02e-97f82d8aff14:r3` | JEV CONFIRMED, confidence 1.0, recovery session evidence |
+| A8-133 | deployment_intent | Platform adapter PREPARE_PREVIEW | 5 | `deployment:REQ-A8-133:bd-a8-133-20260922-171500:r4:PREPARE_PREVIEW` | blocked before submission: no approved typed adapter |
