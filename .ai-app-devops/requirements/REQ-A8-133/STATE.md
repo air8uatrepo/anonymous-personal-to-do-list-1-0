@@ -11,14 +11,14 @@ branch: req/REQ-A8-133
 worktree_path: C:\aiproject\.worktrees\anonymous-personal-to-do-list-1-0\REQ-A8-133
 base_sha: d797bfc
 thread_id: null
-state_revision: 1
+state_revision: 2
 repair_count: 0
 clarification_round: 1
 local_clarification_revision: 3
 last_processed_comment_id: 7d3e9b15-e19b-47e9-bfe3-04c2bd6385a5
 last_processed_comment_at: 2026-09-22T08:04:48.150Z
 linear_issue_id: c08785ff-0d6d-4219-b02e-97f82d8aff14
-linear_sync_revision: 1
+linear_sync_revision: 2
 linear_timeline_comment_id: 5919ad7e-5a55-4f04-aaa0-0a913901d4f8
 linear_reply_request_comment_id: 980f5500-83a6-4535-a791-1fe3192520f7
 linear_spec_issue_id: 1dcd9818-b62a-4678-a750-eaeb5e18d9fb
@@ -41,3 +41,4 @@ The confirmed revision 3 is materialized in the dedicated public repository,
 requirement branch, isolated worktree, root AGENTS.md, and local SDD/state
 records. The next action is to dispatch the Business Direct developer in the
 isolated worktree to create the plan, tasks, implementation, and tests.
+
